@@ -1,18 +1,175 @@
-<style>
-h1 {
-   color: green (211, 92, 22);
-   font-style:italic;
-}
-
-p {
-   color:rgb(223, 53, 53);
-   /*font-style: italic;*/
-   font-size: 1.5em;
-}
-</style>
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200&display=swap');
+/* Universal Rules */
 *{
-   box-sizing: border-box;
+   box-sizing: border-box; 
    margin: 0;
-   padding: ;
+   padding: 0;
 }
+
+body{
+   font-family: 'Arapey';
+   font-size: 17px;
+   line-height: 1.5;
+   color: #f7f3f1;
+   background: #e4d4c8;
+}
+
+img{
+   max-width: 230px;
+   margin-left: 5%;
+}
+
+h1, h2{
+   margin-bottom: 15px;
+}
+
+ul{
+   list-style-type: none;
+}
+
+.container{
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 30px;
+}
+
+/* Navigation Bar */
+
+.navbar{
+   background: #aa816b;
+   color: #fff;
+   height: 60px;
+}
+
+.navbar ul li{
+   margin-left: 20px;
+}
+
+.navbar .logo{
+   font-size: x-large;
+   font-weight: bold;
+}
+
+.navbar a{
+   color: #fff;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.navbar a:hover{
+   color: #523a28;
+}
+
+.navbar .container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+
+.navbar ul{
+   display: flex;
+}
+.navbar ul li{
+   margin-left: 30px;
+}
+
+/* Header */
+
+.header{
+   color: #fff;
+   background-color: #523a28;
+   min-height: 200px;
+}
+
+.header h1{
+   font-family: "Copperplate Gothic Light"; font-size: 23px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; 
+   font-size: 2em;
+   font-weight: bold;
+   line-height: 1;
+   color: #f7f3f1;
+}
+
+/* .header img{
+   max-width: 230px;
+} */
+
+.header .container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+/* Section */
+
+.boxes .container{
+   display: flex;
+   /* justify-content: space-between; */
+}
+
+.box{
+   flex: 1;
+   background: #523a28;
+   border-radius: 10px;
+   margin: 20px 10px;
+   padding: 10px 15px;
+   box-shadow: 0 3px 5px rgba(0, 0, 0, .6)
+}
+
+.box i{
+   margin-right: 10px;
+}
+
+@media(max-width: 760px){
+   .header .container {
+      flex-direction: column;
+      padding-top: 20px;
+      text-align: center;
+   }
+}
+.boxes .container{
+   display: block;
+}
+
+/* Footer */
+.footer .socialMedia a{
+   margin: 0 10px;
+   justify-content: end;
+}
+
+.footer{
+   background: #aa816b;
+   color: #fff;
+   height: 60px;
+}
+
+.footer .logo{
+   font-size: x-large;
+   font-weight: bold;
+}
+
+.footer a{
+   color: #fff;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.footer a:hover{
+   color: lightblue;
+}
+
+.footer .container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+
+.center {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+ }
