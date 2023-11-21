@@ -16,8 +16,10 @@ body{
 
 img{
    max-width: 230px;
-   margin-left: 5%;
+   margin-left: 5%;  
 }
+
+
 
 h1, h2{
    margin-bottom: 15px;
@@ -36,12 +38,14 @@ ul{
 /* Navigation Bar */
 
 .navbar{
+   display: flex;
    background: #aa816b;
    color: #fff;
    height: 60px;
 }
 
 .navbar ul li{
+   
    margin-left: 20px;
 }
 
@@ -127,6 +131,11 @@ ul{
       padding-top: 20px;
       text-align: center;
    }
+   .column {
+      flex-direction: column;
+      padding-top: 20px;
+      text-align: center;
+   }
 }
 .boxes .container{
    display: block;
@@ -134,18 +143,19 @@ ul{
 
 /* Footer */
 .footer .socialMedia a{
-   margin: 0 10px;
+   margin: 0 5px;
    justify-content: end;
 }
 
 .footer{
+
    background: #aa816b;
    color: #fff;
    height: 60px;
 }
 
 .footer .logo{
-   font-size: x-large;
+   font-size: large;
    font-weight: bold;
 }
 
